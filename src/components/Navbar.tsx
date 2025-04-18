@@ -2,23 +2,24 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, Phone, Mail } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav className="bg-white shadow-md w-full fixed top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center">
-          <div className="text-2xl font-bold text-mep-blue">
+          <Link to="/" className="text-2xl font-bold text-mep-blue">
             <span>MEP</span>
             <span className="text-mep-orange ml-1">Engineering</span>
-          </div>
+          </Link>
         </div>
         
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-mep-gray-dark hover:text-mep-blue transition-colors">Home</a>
-          <a href="#services" className="text-mep-gray-dark hover:text-mep-blue transition-colors">Services</a>
+          <Link to="/" className="text-mep-gray-dark hover:text-mep-blue transition-colors">Home</Link>
+          <Link to="/services" className="text-mep-gray-dark hover:text-mep-blue transition-colors">Services</Link>
+          <Link to="/projects" className="text-mep-gray-dark hover:text-mep-blue transition-colors">Projects</Link>
           <a href="#about" className="text-mep-gray-dark hover:text-mep-blue transition-colors">About</a>
-          <a href="#projects" className="text-mep-gray-dark hover:text-mep-blue transition-colors">Projects</a>
           <a href="#contact" className="text-mep-gray-dark hover:text-mep-blue transition-colors">Contact</a>
         </div>
         
