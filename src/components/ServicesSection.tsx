@@ -2,15 +2,16 @@
 import React from 'react';
 import ShutterService from './ShutterService';
 import ServiceShowcase from './ServiceShowcase';
+import QuotationCalculator from './QuotationCalculator';
 
 const ServicesSection = () => {
   return (
     <section id="services" className="py-20 bg-mep-gray-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our MEP Engineering Services</h2>
-          <div className="w-20 h-1 bg-mep-orange mx-auto mb-6"></div>
-          <p className="max-w-2xl mx-auto text-mep-gray-dark">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-mep-blue-dark">Our MEP Engineering Services</h2>
+          <div className="w-32 h-2 bg-mep-orange mx-auto mb-8"></div>
+          <p className="max-w-2xl mx-auto text-lg text-mep-gray-dark font-medium">
             We provide comprehensive mechanical, electrical, and plumbing solutions 
             tailored to meet the specific needs of your construction project.
           </p>
@@ -19,6 +20,15 @@ const ServicesSection = () => {
         {/* Interactive Services Showcase */}
         <div className="mb-32">
           <ServiceShowcase />
+        </div>
+        
+        {/* Quotation Calculator */}
+        <div className="mb-32">
+          <div className="text-center mb-16">
+            <h3 className="text-3xl font-bold mb-4 text-mep-blue-dark">Get an Instant Quote</h3>
+            <p className="text-lg text-mep-gray-dark">Calculate an estimate for your MEP project instantly</p>
+          </div>
+          <QuotationCalculator />
         </div>
         
         <div className="space-y-24">
